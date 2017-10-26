@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mindonshuffle/FriendFinder/issues"
   },
-  "homepage": "https://github.com/mindonshuffle/FriendFinder#readme"
+  "homepage": "https://github.com/mindonshuffle/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
