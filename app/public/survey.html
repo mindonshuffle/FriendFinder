@@ -186,6 +186,24 @@
 
     <script type="text/javascript">
 
+        // checks that each form element has value
+        function validateForm(data){
+            var isValid = true;
+            console.log(data)
+
+            for( var i = 0; i < 11; i++ ){
+
+                if( data[i] === undefined ){
+                    isValid = false;
+                }
+                else if( data[i].value === '' || data[i].value === undefined ){
+                    isValid = false;
+                };
+
+            return isValid;
+            };
+        };
+
         //when submit clicked
         $(".submit").on("click", function(event) {
             //prevent form / reload
@@ -193,21 +211,27 @@
             
             //capture the form data in newFriend            
             var newFriend = $('#survey-form').serializeArray();
-            console.log(newFriend);
+            // console.log(newFriend);
 
             //INPUT VALIDATION NEEDED -- check for name, image, and survey values
-            
 
+            if (validateForm(newFriend)){
+    
+                //post newFriend data to server
+                $.post("/api/new", newFriend)
+                .done(function(data) {
 
-            //post newFriend data to server
-            $.post("/api/new", newFriend)
-            .done(function(data) {
+                    //change image and match name in modal to data returned by server
+                    $('#match-image').attr('src', data.photo);
+                    $('#best-match-name').text(data.name);
 
-                //change image and match name in modal to data returned by server
-                $('#match-image').attr('src', data.photo);
-                $('#best-match-name').text(data.name);
+                });
+            }
 
-            });
+            else{
+                alert("Please answer each element of the survey!")
+            }
+
         });
 
     </script>
