@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-    <title>Survey</title>  
+    <title>Dinner Date Survey</title>  
 
 </head>
 
@@ -18,10 +18,10 @@
     <div class="container">
 
         <div class="jumbotron">
-          <h1 class="text-center"><span class="glyphicon glyphicon-heart"></span> Friend Finder</h1>
-          <hr>
-          <h2 class="text-center">Find Your Match!</h2>
-          <br>
+            <h1 class="text-center"><span class="glyphicon glyphicon-ice-lolly-tasted"></span> Dinner Date</h1>
+            <hr>
+            <h2 class="text-center">Find Your Perfect Food Match!</h2>
+            <br>
 
           <div class="text-center">
 
@@ -35,28 +35,49 @@
 
             <div class="panel panel-default">
                 
-                <div class="panel-heading">
+                <!-- <div class="panel-heading">
                     <h4 class="panel-title">Survey</h4>
-                </div>
+                </div> -->
 
                 <div class="panel-body">
 
-                    <form id="survery-form" role="form">       
+                    <form id="survey-form" role="form">       
                         
                         <div>
-                            <h3>Please Enter Your Name:</h3>  
+                            <h2>Profile Info:</h2>
+                        </div>
+
+                        <div>
+                            <h4>Please enter your name:</h4>  
                             <input type="text" name="name">          
                         </div>
+
                         <div>
-                            <h3>How much do you like donuts?</h3>
-                            <label class="radio-inline"><input type="radio" name="question1" value="1">1</label>
+                            <h4>Please enter the URL of a personal photo:</h4>  
+                            <input type="text" name="photo">          
+                        </div>
+                        
+                        <br>
+                        <hr>
+
+                        <div>
+                            <h2>Survey:</h2>
+                        </div>
+
+                        <div>
+                            <h4>Please rate each of the following foods from 1 (worst) to 5 (best):</h4>
+                        </div>
+
+                        <div>
+                            <h3>Donuts</h3>
+                            <label class="radio-inline"><input class="required" type="radio" name="question1" value="1">1</label>
                             <label class="radio-inline"><input type="radio" name="question1" value="2">2</label>
                             <label class="radio-inline"><input type="radio" name="question1" value="3">3</label>
                             <label class="radio-inline"><input type="radio" name="question1" value="4">4</label>
                             <label class="radio-inline"><input type="radio" name="question1" value="5">5</label>
                         </div>
                         <div>
-                            <h3>How much do you like coffee?</h3>
+                            <h3>BBQ</h3>
                             <label class="radio-inline"><input type="radio" name="question2" value="1">1</label>
                             <label class="radio-inline"><input type="radio" name="question2" value="2">2</label>
                             <label class="radio-inline"><input type="radio" name="question2" value="3">3</label>
@@ -64,7 +85,7 @@
                             <label class="radio-inline"><input type="radio" name="question2" value="5">5</label>
                         </div>
                         <div>                            
-                            <h3>How much do you like macarons?</h3>
+                            <h3>Sushi</h3>
                             <label class="radio-inline"><input type="radio" name="question3" value="1">1</label>
                             <label class="radio-inline"><input type="radio" name="question3" value="2">2</label>
                             <label class="radio-inline"><input type="radio" name="question3" value="3">3</label>
@@ -72,7 +93,7 @@
                             <label class="radio-inline"><input type="radio" name="question3" value="5">5</label>
                         </div>
                         <div>
-                            <h3>How much do you like sushi?</h3>
+                            <h3>Cake</h3>
                             <label class="radio-inline"><input type="radio" name="question4" value="1">1</label>
                             <label class="radio-inline"><input type="radio" name="question4" value="2">2</label>
                             <label class="radio-inline"><input type="radio" name="question4" value="3">3</label>
@@ -80,16 +101,56 @@
                             <label class="radio-inline"><input type="radio" name="question4" value="5">5</label>
                         </div>
                         <div>
-                            <h3>How much do you like pasta?</h3>
+                            <h3>Pasta</h3>
                             <label class="radio-inline"><input type="radio" name="question5" value="1">1</label>
                             <label class="radio-inline"><input type="radio" name="question5" value="2">2</label>
                             <label class="radio-inline"><input type="radio" name="question5" value="3">3</label>
                             <label class="radio-inline"><input type="radio" name="question5" value="4">4</label>
                             <label class="radio-inline"><input type="radio" name="question5" value="5">5</label>
+                        </div>
+                        <div>
+                            <h3>Bacon</h3>
+                            <label class="radio-inline"><input type="radio" name="question6" value="1">1</label>
+                            <label class="radio-inline"><input type="radio" name="question6" value="2">2</label>
+                            <label class="radio-inline"><input type="radio" name="question6" value="3">3</label>
+                            <label class="radio-inline"><input type="radio" name="question6" value="4">4</label>
+                            <label class="radio-inline"><input type="radio" name="question6" value="5">5</label>
+                        </div>
+                        <div>
+                            <h3>Curry</h3>
+                            <label class="radio-inline"><input type="radio" name="question7" value="1">1</label>
+                            <label class="radio-inline"><input type="radio" name="question7" value="2">2</label>
+                            <label class="radio-inline"><input type="radio" name="question7" value="3">3</label>
+                            <label class="radio-inline"><input type="radio" name="question7" value="4">4</label>
+                            <label class="radio-inline"><input type="radio" name="question7" value="5">5</label>
+                        </div>
+                        <div>                            
+                            <h3>Tacos</h3>
+                            <label class="radio-inline"><input type="radio" name="question8" value="1">1</label>
+                            <label class="radio-inline"><input type="radio" name="question8" value="2">2</label>
+                            <label class="radio-inline"><input type="radio" name="question8" value="3">3</label>
+                            <label class="radio-inline"><input type="radio" name="question8" value="4">4</label>
+                            <label class="radio-inline"><input type="radio" name="question8" value="5">5</label>
+                        </div>
+                        <div>
+                            <h3>Salad</h3>
+                            <label class="radio-inline"><input type="radio" name="question9" value="1">1</label>
+                            <label class="radio-inline"><input type="radio" name="question9" value="2">2</label>
+                            <label class="radio-inline"><input type="radio" name="question9" value="3">3</label>
+                            <label class="radio-inline"><input type="radio" name="question9" value="4">4</label>
+                            <label class="radio-inline"><input type="radio" name="question9" value="5">5</label>
+                        </div>
+                        <div>
+                            <h3>Bread</h3>
+                            <label class="radio-inline"><input type="radio" name="question10" value="1">1</label>
+                            <label class="radio-inline"><input type="radio" name="question10" value="2">2</label>
+                            <label class="radio-inline"><input type="radio" name="question10" value="3">3</label>
+                            <label class="radio-inline"><input type="radio" name="question10" value="4">4</label>
+                            <label class="radio-inline"><input type="radio" name="question10" value="5">5</label>
                         </div>  
                         <br>
                        
-                        <button type="submit" class="btn btn-primary submit">Submit</button>
+                        <button type="button" class="btn btn-primary submit btn-lg" data-toggle="modal" data-target="#myModal">Find Your Match!</button>
 
                     </form>
 
@@ -101,19 +162,51 @@
 
     </div>
 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Your Best Dinner Match is:</h4>
+                </div>
+                <div class="modal-body">
+                    <img id= "match-image" src="http://lorempixel.com/output/abstract-q-c-200-200-5.jpg" alt="Your Match!">
+                    <h2 id="best-match-name">Error!</h2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <script type="text/javascript">
 
+        //when submit clicked
         $(".submit").on("click", function(event) {
+            //prevent form / reload
             event.preventDefault();
-
-            alert("thing");
             
-            var newFriend = $('#survery-form').serializeArray();
+            //capture the form data in newFriend            
+            var newFriend = $('#survey-form').serializeArray();
             console.log(newFriend);
 
+            //INPUT VALIDATION NEEDED -- check for name, image, and survey values
+            
+
+
+            //post newFriend data to server
             $.post("/api/new", newFriend)
             .done(function(data) {
-                console.log(data);
+
+                //change image and match name in modal to data returned by server
+                $('#match-image').attr('src', data.photo);
+                $('#best-match-name').text(data.name);
+
             });
         });
 
