@@ -4,3 +4,7 @@
 
 
 In its current implementation, **Dinner Date** does not feature persistant storage of user information, so user information is only retained while the server is online. Converting to a persistant database would be the next logical step for future development.
+
+![Home Screen](/readme/screenshot1.png)
+![Survey Screen](/readme/screenshot2.png)
+![Results Modal](/readme/screenshot3.png)
