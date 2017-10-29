@@ -67,4 +67,18 @@ module.exports = [{
 "question8": "4",
 "question9": "2",
 "question10": "3"
+},
+{
+"name": "Al",
+"photo": "http://thebigsmoke.com.au/wp-content/uploads/download-5.jpeg",
+"question1": "2",
+"question2": "2",
+"question3": "4",
+"question4": "3",
+"question5": "5",
+"question6": "4",
+"question7": "5",
+"question8": "1",
+"question9": "1",
+"question10": "4"
 }];
