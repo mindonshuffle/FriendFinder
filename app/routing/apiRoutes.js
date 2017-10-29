@@ -1,7 +1,6 @@
 var path = require("path");
 var friends = require('../data/friends.js');
 
-
 //accepts a new friend's data and finds the best match in the 'database'
 function findMatch(newFriend){
 
@@ -36,8 +35,6 @@ function findMatch(newFriend){
 
 }
 
-
-
 module.exports = function (app){
 		
 	//for api get request, send back the array of friends
@@ -46,7 +43,6 @@ module.exports = function (app){
   		res.send(friends);
 
 	});
-
 
 	//for post request, find best match, push new friend to array, then return best match
 	app.post("/api/new", function(req, res) {

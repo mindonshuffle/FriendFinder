@@ -234,8 +234,7 @@
             var newFriend = $('#survey-form').serializeArray();
             // console.log(newFriend);
 
-            //INPUT VALIDATION NEEDED -- check for name, image, and survey values
-
+            //check if validated
             if (validateForm(newFriend)){
 
                 //post newFriend data to server
@@ -246,12 +245,14 @@
                     $('#match-image').attr('src', data.photo);
                     $('#best-match-name').text(data.name);
 
+                    //display the result modal
                     $("#myModal").modal('toggle');
 
                 });
             }
 
             else{
+                //if not validated, show the error modal
                 $("#errorModal").modal('toggle');
             }
 
